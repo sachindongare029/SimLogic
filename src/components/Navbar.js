@@ -1,20 +1,16 @@
 import React from "react";
 // import { Link } from 'react-router-dom';
-import { withRouter } from "react-router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
-import "../styles/dashboard.scss";
+import "../styles/navbar.scss";
 
-class Dashboard extends React.Component {
+class Navbar extends React.Component {
   render() {
     return (
-      <div className="sl__dashboard">
-        <nav className="navbar navbar-light justify-content-between">
-          <a className="navbar__brand" href="/#">
-            Sim Logic
-          </a>
-          <div className="dashboard__action__control">
+      <div className="sl__navbar">
+        <nav className="navbar navbar-light justify-content-end">
+          <div className="navbar__action__control">
             <form className="form-inline">
               <div className="input-field">
                 <input id="search" type="text" placeholder="Search" />
@@ -30,7 +26,7 @@ class Dashboard extends React.Component {
                 </div>
               </div>
             </form>
-            <div className="dashboard__user">
+            <div className="navbar__user">
               <FontAwesomeIcon icon={faUser} />
             </div>
           </div>
@@ -40,4 +36,4 @@ class Dashboard extends React.Component {
   }
 }
 
-export default withRouter(Dashboard);
+export default Navbar;

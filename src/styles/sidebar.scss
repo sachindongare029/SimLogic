@@ -1,0 +1,36 @@
+.sidenav---sidenav-toggle---1KRjR {
+  padding-left: 12px;
+  width: 70px;
+  background: linear-gradient(to bottom, #6da951, #96bd67);
+  span {
+    display: none !important;
+  }
+}
+.sidenav---sidenav-toggle---1KRjR::before {
+  display: block !important;
+  content: "SL";
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+.sidenav---sidenav-nav---3tvij {
+  margin-top: 20px;
+}
+.sl__main {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.15s;
+  padding: 0 20px;
+}
+.sl__collapsed {
+  margin-left: 64px;
+}
+.sl__expanded {
+  margin-left: 240px;
+}
+.sidenav---sidenav---_2tBP {
+  background: #2b3d97;
+}
+.sidenav---sidenav-navitem---uwIJ- {
+  padding-left: 12px;
+}

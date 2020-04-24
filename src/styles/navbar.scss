@@ -1,10 +1,10 @@
 .navbar {
   padding-top: 24px;
   .navbar__brand {
-    color: #d7d7d8;
+    color: #969696;
   }
 
-  .dashboard__action__control {
+  .navbar__action__control {
     display: flex;
     align-items: center;
     .input-field {
@@ -20,11 +20,11 @@
         padding-left: 20px;
         font-size: 12px;
         height: 30px;
-        color: #d7d7d8;
+        color: #969696;
         background: #121825;
       }
       input::placeholder {
-        color: #d7d7d8;
+        color: #969696;
         font-size: 14px;
         font-weight: 400;
       }
@@ -41,7 +41,6 @@
         white-space: nowrap;
         border-radius: 20px;
         font-size: 14px;
-        color: #fff;
         transition: all 0.2s ease-out, color 0.2s ease-out;
         border: 0;
         cursor: pointer;
@@ -84,11 +83,11 @@
         svg {
           width: 21px;
           height: 21px;
-          fill: #d7d7d8;
+          fill: #969696;
         }
       }
     }
-    .dashboard__user {
+    .navbar__user {
       margin-left: 30px;
       svg {
         width: 21px;

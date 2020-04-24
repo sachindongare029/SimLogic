@@ -1,8 +1,9 @@
 import React from "react";
 // import { Link } from 'react-router-dom';
 import { withRouter } from "react-router";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 import "../styles/dashboard.scss";
 
 class Dashboard extends React.Component {
@@ -10,11 +11,11 @@ class Dashboard extends React.Component {
     return (
       <div className="sl__dashboard">
         <nav className="navbar navbar-light justify-content-between">
-          <a className="navbar-brand" href="/#">
+          <a className="navbar__brand" href="/#">
             Sim Logic
           </a>
-          <form className="form-inline">
-            <div className="basic-search">
+          <div className="dashboard__action__control">
+            <form className="form-inline">
               <div className="input-field">
                 <input id="search" type="text" placeholder="Search" />
                 <div className="icon-wrap">
@@ -28,8 +29,11 @@ class Dashboard extends React.Component {
                   </svg>
                 </div>
               </div>
+            </form>
+            <div className="dashboard__user">
+              <FontAwesomeIcon icon={faUser} />
             </div>
-          </form>
+          </div>
         </nav>
       </div>
     );

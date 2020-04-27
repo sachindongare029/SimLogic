@@ -1,0 +1,39 @@
+.dashboard {
+  .dashboard-header{
+    display: flex;
+    color: white;
+
+    .select-menu {
+      height: 30px;
+      border-radius: 5px;
+      margin-left: 10px;
+  }
+  }
+ 
+  .dashboard-content {
+    margin-top: 20px;
+    
+    .data-card {
+    background-color: transparent;
+    width: 300px;
+    height: 165px;
+    margin-left: 40px;
+    text-align: center;
+    color: white;
+    box-shadow: 3px 5px 11px 2px #000b3a;
+
+      h6 {
+        padding: 12px 15px;
+      }
+
+      p{
+        font-size: 11px;
+      }
+
+      .btn-default {
+        background: white;
+        border-radius: 25px;
+      }
+    }
+  }
+}

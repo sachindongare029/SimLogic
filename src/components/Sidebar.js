@@ -78,6 +78,51 @@ class Sidebar extends Component {
                     </NavIcon>
                     <NavText>Inventory</NavText>
                   </NavItem>
+                  <NavItem
+                    eventKey="usage"
+                    active={activeFlag === "usage" ? true : false}
+                  >
+                    <NavIcon>
+                      <i className="fas fa-broadcast-tower"></i>
+                    </NavIcon>
+                    <NavText>Usage Summary</NavText>
+                  </NavItem>
+                  <NavItem
+                    eventKey="cost"
+                    active={activeFlag === "cost" ? true : false}
+                  >
+                    <NavIcon>
+                      <i className="fa fa-usd" aria-hidden="true"></i>
+                    </NavIcon>
+                    <NavText>Cost Summary</NavText>
+                  </NavItem>
+                  <NavItem
+                    eventKey="metrics"
+                    active={activeFlag === "metrics" ? true : false}
+                  >
+                    <NavIcon>
+                      <i className="fa fa-line-chart" aria-hidden="true"></i>
+                    </NavIcon>
+                    <NavText>Top Metrics</NavText>
+                  </NavItem>
+                  <NavItem
+                    eventKey="reports"
+                    active={activeFlag === "reports" ? true : false}
+                  >
+                    <NavIcon>
+                      <i className="fa fa-file-text" aria-hidden="true"></i>
+                    </NavIcon>
+                    <NavText>Reports</NavText>
+                  </NavItem>
+                  <NavItem
+                    eventKey="account"
+                    active={activeFlag === "account" ? true : false}
+                  >
+                    <NavIcon>
+                      <i className="fa fa-address-card" aria-hidden="true"></i>
+                    </NavIcon>
+                    <NavText>Account</NavText>
+                  </NavItem>
                 </SideNav.Nav>
               </SideNav>
               <main className={"sl__main " + mainClass}>

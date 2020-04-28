@@ -4,10 +4,10 @@ import Dashboard from "./Dashboard";
 import Inventory from './Inventory';
 
 const Routes = () => (
-  <React.Fragment>
+  <div className="main__section container">
     <Route exact path={"/"} component={Dashboard} />
     <Route exact path={"/inventory"} component={Inventory} />
-  </React.Fragment>
+  </div>
 );
 
 export default Routes;

@@ -1,13 +1,14 @@
 .dashboard {
   .dashboard-header {
     display: flex;
-    color: white;
+    color: #000;
   }
   .dashboard-content {
     margin-top: 20px;
+    padding: 0 15px;
     .dashboard__section {
-      margin: 20px 40px;
-      color: white;
+      margin: 20px 0;
+      color: #000;
       font-size: 20px;
       font-weight: 600;
     }
@@ -17,9 +18,7 @@
       justify-content: space-between;
       background-color: #282f54;
       border-radius: 5px;
-      width: 300px;
       height: 190px;
-      margin-left: 40px;
       padding: 20px 24px;
       text-align: center;
       color: white;

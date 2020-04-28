@@ -1,16 +1,21 @@
 .dashboard {
   .dashboard-header {
     display: flex;
-    color: #000;
+    color: white;
     h4 {
       font-weight: 700;
     }
   }
   .dashboard__content {
     padding: 0 15px;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    // padding: 35px 10px;
+    border-radius: 10px;
+    background-color: #1E2B5B;
     .dashboard__section {
       margin: 20px 0;
-      color: #000;
+      color: #7a97ff;
       font-size: 20px;
       font-weight: 600;
     }
@@ -20,7 +25,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(27, 27, 89, 1) 42%);
+        background-image: linear-gradient(to right, rgba(255,0,0,0), #0a6d7d);
         border-radius: 5px;
         height: 190px;
         padding: 20px 24px;
@@ -84,7 +89,7 @@
           }
           thead {
             tr {
-              background: #282f54;
+              background: #1A2551;
               color: #fff;
             }
           }

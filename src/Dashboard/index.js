@@ -110,6 +110,30 @@ class Dashboard extends Component {
                     <td>3.49 GB</td>
                     <td>$1,096</td>
                   </tr>
+                  <tr>
+                    <td>5 GB</td>
+                    <td>$34.50</td>
+                    <td>64</td>
+                    <td>310.60 GB</td>
+                    <td>9.40 GB</td>
+                    <td>$2,176</td>
+                  </tr>
+                  <tr>
+                    <td>10 GB</td>
+                    <td>$55.25</td>
+                    <td>27</td>
+                    <td>235.71 GB</td>
+                    <td>34.29 GB</td>
+                    <td>$1,491</td>
+                  </tr>
+                  <tr>
+                    <td>70 GB</td>
+                    <td>$310.25</td>
+                    <td>2</td>
+                    <td>130.23 GB</td>
+                    <td>9.76 GB</td>
+                    <td>$620</td>
+                  </tr>
                 </tbody>
               </table>
             </div>

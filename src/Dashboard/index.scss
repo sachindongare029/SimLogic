@@ -4,8 +4,8 @@
     color: white;
   }
   .dashboard-content {
-    width: 90%;
-    margin-left: 65px;
+    width: 100%;
+    // margin-left: 65px;
     margin-top: 20px;
     border: 1px solid transparent;
     padding: 35px 20px;
@@ -29,7 +29,7 @@
       padding: 20px 24px;
       text-align: center;
       color: white;
-      background-image: linear-gradient(to right, rgba(291, 0, 0, 0), #348a98);
+      background-image: linear-gradient(to right, rgba(291, 0, 0, 0), #0a6d7d);
       .card__statistics {
         display: flex;
         justify-content: space-between;

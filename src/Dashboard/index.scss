@@ -120,7 +120,7 @@
             }
           }
         }
-        
+
         // pie chart style
 
         .inventary__pie__chart {
@@ -142,6 +142,19 @@
             }
             .chart__flow__stats {
               width: 65%;
+              .chart__stat__title {
+                font-size: 14px;
+                color: #8a9bd1;
+                text-transform: uppercase;
+                font-weight: 700;
+              }
+              .progress {
+                height: 15px;
+                font-size: 12px;
+                font-weight: 700;
+                background-color: #e9ecef;
+                border-radius: 20px;
+              }
             }
             .chart__flow__count {
               width: 20%;

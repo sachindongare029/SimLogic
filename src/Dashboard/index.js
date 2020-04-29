@@ -1,13 +1,72 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import InventaryPieChart from "./InventaryPieChart";
+import InventaryInfo from './InventaryInfo';
 import "./index.scss";
 
 class Dashboard extends Component {
   render() {
     return (
       <div className="dashboard">
-        <div className="dashboard-header">
-          <h4>Dashboard</h4>
+        <div className="dashboard__select">
+          <label htmlFor="menu">Sim Status</label>
+          <div className="status__select__menu">
+            <select id="menu">
+              <option value="all">All</option>
+              <option value="activated">Activated</option>
+              <option value="activation_ready">Activation Ready</option>
+              <option value="deactivated">Deactivated</option>
+              <option value="inventary">Inventary</option>
+              <option value="test_ready">Test Ready</option>
+              <option value="retired">Retired</option>
+            </select>
+          </div>
+        </div>
+        <div className="data__statistics">
+          <div className="data__statistics__section">
+            <div className="data__stat__title">Inventary</div>
+            <div className="data__stat__count">
+              220 <span className="count__unit">PCS</span>
+            </div>
+            <div className="data__stat__flow">
+              <div>
+                <i className="fa fa-caret-down" aria-hidden="true"></i>
+              </div>
+              <div className="flow__count">567 PCS</div>
+            </div>
+          </div>
+          <div className="data__statistics__section">
+            <div className="data__stat__title">Data Usage</div>
+            <div className="data__stat__count">
+              806.27 <span className="count__unit">GB</span>
+            </div>
+            <div className="data__stat__flow">
+              <div>
+                <i className="fa fa-caret-up" aria-hidden="true"></i>
+              </div>
+              <div className="flow__count">567 GB</div>
+            </div>
+          </div>
+          <div className="data__statistics__section">
+            <div className="data__stat__title">Cost Summary</div>
+            <div className="data__stat__count">$5497</div>
+            <div className="data__stat__flow">
+              <div>
+                <i className="fa fa-caret-down" aria-hidden="true"></i>
+              </div>
+              <div className="flow__count">$45,795</div>
+            </div>
+          </div>
+          <div className="data__statistics__section">
+            <div className="data__stat__title">Total User</div>
+            <div className="data__stat__count">200</div>
+            <div className="data__stat__flow">
+              <div>
+                <i className="fa fa-caret-up" aria-hidden="true"></i>
+              </div>
+              <div className="flow__count">10</div>
+            </div>
+          </div>
         </div>
         <div className="dashboard__content">
           <div className="dashboard__overview">
@@ -17,19 +76,29 @@ class Dashboard extends Component {
                 <div className="data-card">
                   <div className="card__statistics">
                     <div className="statistics__info">
-                      <div className="statistics__title">
-                        <div className="card__title">Inventory</div>
-                        <i className="fa fa-info-circle" aria-hidden="true"></i>
-                      </div>
+                      <div className="statistics__title">Inventory</div>
                     </div>
-                    <div className="statistics__count">
-                      <div className="count">206</div>
+                    <div className="card__action--btn">
+                      <button type="button" className="btn btn-default">
+                        <i className="fa fa-arrow-right" aria-hidden="true"></i>
+                      </button>
                     </div>
                   </div>
-                  <div className="card__action--btn">
-                    <Link to="/" type="button" className="btn btn-default">
-                      <i className="fa fa-arrow-right" aria-hidden="true"></i>
-                    </Link>
+                  <InventaryPieChart />
+                  <InventaryInfo />
+                </div>
+              </div>
+              <div className="col-4">
+                <div className="data-card">
+                  <div className="card__statistics">
+                    <div className="statistics__info">
+                      <div className="statistics__title">Data Usage</div>
+                    </div>
+                    <div className="card__action--btn">
+                      <button type="button" className="btn btn-default">
+                        <i className="fa fa-arrow-right" aria-hidden="true"></i>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -37,43 +106,13 @@ class Dashboard extends Component {
                 <div className="data-card">
                   <div className="card__statistics">
                     <div className="statistics__info">
-                      <div className="statistics__title">
-                        <div className="card__title">Data Usage</div>
-                        <i className="fa fa-info-circle" aria-hidden="true"></i>
-                      </div>
-                      <div className="count__info">Total Data Used</div>
+                      <div className="statistics__title">Cost Summary</div>
                     </div>
-                    <div className="statistics__count">
-                      <div className="count">
-                        806.27 <span className="count__extension">GB</span>
-                      </div>
+                    <div className="card__action--btn">
+                      <button type="button" className="btn btn-default">
+                        <i className="fa fa-arrow-right" aria-hidden="true"></i>
+                      </button>
                     </div>
-                  </div>
-                  <div className="card__action--btn">
-                    <button type="button" className="btn btn-default">
-                      <i className="fa fa-arrow-right" aria-hidden="true"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className="col-4">
-                <div className="data-card">
-                  <div className="card__statistics">
-                    <div className="statistics__info">
-                      <div className="statistics__title">
-                        <div className="card__title">Cost Summary</div>
-                        <i className="fa fa-info-circle" aria-hidden="true"></i>
-                      </div>
-                      <div className="count__info">Total Cost</div>
-                    </div>
-                    <div className="statistics__count">
-                      <div className="count">$ 5,497</div>
-                    </div>
-                  </div>
-                  <div className="card__action--btn">
-                    <button type="button" className="btn btn-default">
-                      <i className="fa fa-arrow-right" aria-hidden="true"></i>
-                    </button>
                   </div>
                 </div>
               </div>

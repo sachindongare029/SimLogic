@@ -20,6 +20,52 @@ class Dashboard extends Component {
             </select>
           </div>
         </div>
+        <div className="data__statistics">
+          <div className="data__statistics__section">
+            <div className="data__stat__title">Inventary</div>
+            <div className="data__stat__count">
+              220 <span className="count__unit">PCS</span>
+            </div>
+            <div className="data__stat__flow">
+              <div>
+                <i className="fa fa-caret-down" aria-hidden="true"></i>
+              </div>
+              <div className="flow__count">567 PCS</div>
+            </div>
+          </div>
+          <div className="data__statistics__section">
+            <div className="data__stat__title">Data Usage</div>
+            <div className="data__stat__count">
+              806.27 <span className="count__unit">GB</span>
+            </div>
+            <div className="data__stat__flow">
+              <div>
+                <i className="fa fa-caret-up" aria-hidden="true"></i>
+              </div>
+              <div className="flow__count">567 GB</div>
+            </div>
+          </div>
+          <div className="data__statistics__section">
+            <div className="data__stat__title">Cost Summary</div>
+            <div className="data__stat__count">$5497</div>
+            <div className="data__stat__flow">
+              <div>
+                <i className="fa fa-caret-down" aria-hidden="true"></i>
+              </div>
+              <div className="flow__count">$45,795</div>
+            </div>
+          </div>
+          <div className="data__statistics__section">
+            <div className="data__stat__title">Total User</div>
+            <div className="data__stat__count">200</div>
+            <div className="data__stat__flow">
+              <div>
+                <i className="fa fa-caret-up" aria-hidden="true"></i>
+              </div>
+              <div className="flow__count">10</div>
+            </div>
+          </div>
+        </div>
         <div className="dashboard__content">
           <div className="dashboard__overview">
             <div className="dashboard__section">Overview</div>

@@ -12,7 +12,7 @@
       select {
         background: linear-gradient(90deg, rgba(64, 188, 121, 1) 18%, rgba(99, 191, 54, 1) 56%);
         color: white;
-        padding: 6px 14px;
+        padding: 6px 0 6px 10px;
         min-width: 150px;
         border: none;
         border-radius: 22px;
@@ -25,6 +25,48 @@
         option {
           padding: 30px;
           background: rgb(64, 188, 121);
+        }
+      }
+    }
+  }
+  .data__statistics {
+    display: flex;
+    justify-content: space-between;
+    margin: 14px 0;
+    .data__statistics__section {
+      width: 25%;
+      padding: 20px;
+      .data__stat__title {
+        color: #8a9bd1;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .data__stat__count {
+        color: #f4f7ff;
+        font-size: 36px;
+        font-weight: 700;
+        span {
+          font-size: 18px;
+          color: #c4cbec;
+          font-weight: 100;
+        }
+      }
+      .data__stat__flow {
+        color: #8a9bd1;
+        font-size: 14px;
+        font-weight: 700;
+        display: flex;
+        .fa {
+          font-size: 18px;
+        }
+        .fa-caret-down {
+          color: #f04d8c;
+        }
+        .fa-caret-up {
+          color: #f9cf5b;
+        }
+        .flow__count {
+          margin-left: 6px;
         }
       }
     }

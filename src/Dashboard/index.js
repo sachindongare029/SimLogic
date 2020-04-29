@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import InventaryPieChart from "./InventaryPieChart";
-import InventaryInfo from './InventaryInfo';
+import InventaryInfo from "./InventaryInfo";
 import "./index.scss";
 
 class Dashboard extends Component {
@@ -23,48 +23,64 @@ class Dashboard extends Component {
           </div>
         </div>
         <div className="data__statistics">
-          <div className="data__statistics__section">
+          <div className="data__statistics__section inventary__section">
             <div className="data__stat__title">Inventary</div>
-            <div className="data__stat__count">
-              220 <span className="count__unit">PCS</span>
-            </div>
-            <div className="data__stat__flow">
-              <div>
-                <i className="fa fa-caret-down" aria-hidden="true"></i>
+            <div className="data__stat__content">
+              <div className="data__stat__count">
+                220 <span className="count__unit">PCS</span>
               </div>
-              <div className="flow__count">567 PCS</div>
+              <div className="data__stat__flow">
+                <div>
+                  <i className="fa fa-caret-down" aria-hidden="true"></i>
+                </div>
+                <div className="flow__count">
+                  567 PCS <span>(from last month)</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="data__statistics__section">
+          <div className="data__statistics__section usage__section">
             <div className="data__stat__title">Data Usage</div>
-            <div className="data__stat__count">
-              806.27 <span className="count__unit">GB</span>
-            </div>
-            <div className="data__stat__flow">
-              <div>
-                <i className="fa fa-caret-up" aria-hidden="true"></i>
+            <div className="data__stat__content">
+              <div className="data__stat__count">
+                806.27 <span className="count__unit">GB</span>
               </div>
-              <div className="flow__count">567 GB</div>
+              <div className="data__stat__flow">
+                <div>
+                  <i className="fa fa-caret-up" aria-hidden="true"></i>
+                </div>
+                <div className="flow__count">
+                  567 GB <span>(from last month)</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="data__statistics__section">
+          <div className="data__statistics__section cost__summary__section">
             <div className="data__stat__title">Cost Summary</div>
-            <div className="data__stat__count">$5497</div>
-            <div className="data__stat__flow">
-              <div>
-                <i className="fa fa-caret-down" aria-hidden="true"></i>
+            <div className="data__stat__content">
+              <div className="data__stat__count">$5497</div>
+              <div className="data__stat__flow">
+                <div>
+                  <i className="fa fa-caret-down" aria-hidden="true"></i>
+                </div>
+                <div className="flow__count">
+                  $45,795 <span>(from last month)</span>
+                </div>
               </div>
-              <div className="flow__count">$45,795</div>
             </div>
           </div>
-          <div className="data__statistics__section">
+          <div className="data__statistics__section user__section">
             <div className="data__stat__title">Total User</div>
-            <div className="data__stat__count">200</div>
-            <div className="data__stat__flow">
-              <div>
-                <i className="fa fa-caret-up" aria-hidden="true"></i>
+            <div className="data__stat__content">
+              <div className="data__stat__count">200</div>
+              <div className="data__stat__flow">
+                <div>
+                  <i className="fa fa-caret-up" aria-hidden="true"></i>
+                </div>
+                <div className="flow__count">
+                  10 <span>(from last month)</span>
+                </div>
               </div>
-              <div className="flow__count">10</div>
             </div>
           </div>
         </div>

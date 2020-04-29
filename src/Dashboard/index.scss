@@ -1,22 +1,24 @@
 .dashboard {
+  padding: 20px 0;
   .dashboard__select {
     display: flex;
     align-items: center;
     label {
-      color: #8a9bd1;
+      color: #232b5b;
       font-size: 20px;
       font-weight: 600;
+      margin-bottom: 0;
     }
     .status__select__menu {
       margin-left: 30px;
       select {
         background: linear-gradient(90deg, rgba(64, 188, 121, 1) 18%, rgba(99, 191, 54, 1) 56%);
         color: white;
-        padding: 6px 0 6px 10px;
+        padding: 8px 0 8px 23px;
         min-width: 150px;
         border: none;
         border-radius: 22px;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
         -webkit-appearance: button;
         -moz-appearance: button;
@@ -35,51 +37,71 @@
     margin: 14px 0;
     .data__statistics__section {
       width: 25%;
-      padding: 20px;
+      margin: 18px;
+      padding: 15px;
+      border-radius: 3px;
       .data__stat__title {
-        color: #8a9bd1;
-        font-size: 14px;
+        color: #232b5b;
+        font-size: 22px;
         font-weight: 600;
       }
-      .data__stat__count {
-        color: #f4f7ff;
-        font-size: 36px;
-        font-weight: 700;
-        span {
-          font-size: 18px;
-          color: #c4cbec;
-          font-weight: 100;
+      .data__stat__content {
+        float: right;
+        .data__stat__count {
+          color: #f4f7ff;
+          font-size: 36px;
+          font-weight: 700;
+          display: flex;
+          justify-content: flex-end;
+          align-items: baseline;
+          span {
+            font-size: 18px;
+            color: #e2e2e2;
+            font-weight: 100;
+          }
         }
-      }
-      .data__stat__flow {
-        color: #8a9bd1;
-        font-size: 14px;
-        font-weight: 700;
-        display: flex;
-        .fa {
-          font-size: 18px;
-        }
-        .fa-caret-down {
-          color: #f04d8c;
-        }
-        .fa-caret-up {
-          color: #f9cf5b;
-        }
-        .flow__count {
-          margin-left: 6px;
+        .data__stat__flow {
+          color: #fff;
+          font-size: 14px;
+          font-weight: 700;
+          display: flex;
+          justify-content: flex-end;
+          .fa {
+            font-size: 18px;
+          }
+          .fa-caret-down {
+            color: #af3262;
+          }
+          .fa-caret-up {
+            color: #00e211;
+          }
+          .flow__count {
+            margin-left: 6px;
+            span {
+              font-size: 10px;
+            }
+          }
         }
       }
     }
+    .inventary__section {
+      background-color: #ef4f4c;
+    }
+    .usage__section {
+      background-color: #3796f3;
+    }
+    .cost__summary__section {
+      background-color: #319788;
+    }
+    .user__section {
+      background-color: #3f51b5;
+    }
   }
   .dashboard__content {
-    padding: 0 15px;
     margin: 20px 0;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    background-color: #1e2b5b;
     .dashboard__section {
       margin: 20px 0;
-      color: #7a97ff;
+      color: #232b5b;
       font-size: 20px;
       font-weight: 600;
     }
@@ -87,7 +109,7 @@
       margin-top: 20px;
       .data-card {
         // background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #0a6d7d);
-        background-color: #2d3d77;
+        background-color: #fff;
         border-radius: 5px;
         height: 450px;
         padding: 32px 20px;
@@ -104,7 +126,7 @@
               align-items: center;
               font-size: 24px;
               font-weight: 700;
-              color: #7a97ff;
+              color: #232b5b;
             }
             .count__info {
               text-align: start;
@@ -117,6 +139,7 @@
               background: linear-gradient(0deg, rgba(64, 188, 121, 1) 28%, rgba(99, 191, 54, 1) 77%);
               border-radius: 25px;
               float: right;
+              padding: 0.21rem 0.5rem;
             }
           }
         }
@@ -144,7 +167,7 @@
               width: 65%;
               .chart__stat__title {
                 font-size: 14px;
-                color: #8a9bd1;
+                color: #232b5b;
                 text-transform: uppercase;
                 font-weight: 700;
               }

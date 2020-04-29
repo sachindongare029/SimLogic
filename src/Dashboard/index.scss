@@ -89,12 +89,14 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #0a6d7d);
+        // background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #0a6d7d);
+        background-color: #2d3d77;
         border-radius: 5px;
-        height: 190px;
-        padding: 20px 24px;
+        height: 400px;
+        padding: 32px 20px;
         text-align: center;
         color: white;
+        margin: 0 18px;
         .card__statistics {
           display: flex;
           justify-content: space-between;
@@ -104,33 +106,26 @@
             .statistics__title {
               display: flex;
               align-items: center;
-              font-size: 20px;
-              .card__title {
-                margin-right: 6px;
-              }
+              font-size: 24px;
+              font-weight: 700;
+              color: #7a97ff;
             }
             .count__info {
               text-align: start;
               font-size: 12px;
             }
           }
-          .statistics__count {
+          .card__action--btn {
             width: 35%;
-            .count {
-              font-size: 20px;
-              .count__extension {
-                font-size: 12px;
-              }
+            .btn-default {
+              background: linear-gradient(0deg, rgba(64, 188, 121, 1) 28%, rgba(99, 191, 54, 1) 77%);
+              border-radius: 25px;
+              float: right;
             }
           }
         }
         p {
           font-size: 11px;
-        }
-        .btn-default {
-          background: white;
-          border-radius: 25px;
-          float: right;
         }
       }
     }

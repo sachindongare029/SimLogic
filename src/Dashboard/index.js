@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import InventaryPieChart from "./InventaryPieChart";
+import InventaryInfo from './InventaryInfo';
 import "./index.scss";
 
 class Dashboard extends Component {
@@ -84,6 +85,7 @@ class Dashboard extends Component {
                     </div>
                   </div>
                   <InventaryPieChart />
+                  <InventaryInfo />
                 </div>
               </div>
               <div className="col-4">

@@ -5,12 +5,30 @@ class InventaryPieChart extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      labels: ["January", "February", "March", "April", "May"],
+      labels: [
+        "Activated",
+        "Activation Ready",
+        "Deactivated",
+        "Inventary",
+        "Retired",
+      ],
       datasets: [
         {
-          backgroundColor: ["#B21F00", "#C9DE00", "#00A6B4", "#6800B4"],
-          hoverBackgroundColor: ["#501800", "#4B5000", "#003350", "#35014F"],
-          data: [65, 59, 81, 56],
+          backgroundColor: [
+            "#BE61CA",
+            "#633EBB",
+            "#F2BC5E",
+            "#F13C59",
+            "#64C2A6",
+          ],
+          hoverBackgroundColor: [
+            "#7e3288",
+            "#381a80",
+            "#947030",
+            "#982537",
+            "#76968d",
+          ],
+          data: [143, 39, 17, 5, 2],
         },
       ],
     };
@@ -32,6 +50,11 @@ class InventaryPieChart extends React.Component {
             legend: {
               display: false,
               position: "right",
+            },
+            elements: {
+              arc: {
+                borderWidth: 0,
+              },
             },
           }}
         />

@@ -89,9 +89,8 @@
         // background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #0a6d7d);
         background-color: #2d3d77;
         border-radius: 5px;
-        height: 400px;
+        height: 450px;
         padding: 32px 20px;
-        text-align: center;
         color: white;
         margin: 0 18px;
         .card__statistics {
@@ -121,8 +120,33 @@
             }
           }
         }
-        p {
-          font-size: 11px;
+        
+        // pie chart style
+
+        .inventary__pie__chart {
+          margin-top: 20px;
+        }
+
+        // chart info style
+
+        .inventary__chart__info {
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+          .chart__info__section {
+            display: flex;
+            justify-content: space-between;
+            height: 40px;
+            .chart__color__logo {
+              width: 15%;
+            }
+            .chart__flow__stats {
+              width: 65%;
+            }
+            .chart__flow__count {
+              width: 20%;
+            }
+          }
         }
       }
     }

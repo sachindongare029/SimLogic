@@ -166,21 +166,24 @@
             .chart__flow__stats {
               width: 65%;
               .chart__stat__title {
-                font-size: 14px;
+                font-size: 12px;
                 color: #232b5b;
                 text-transform: uppercase;
                 font-weight: 700;
               }
               .progress {
-                height: 15px;
-                font-size: 12px;
-                font-weight: 700;
+                height: 8px;
                 background-color: #e9ecef;
                 border-radius: 20px;
               }
             }
             .chart__flow__count {
               width: 20%;
+              color: #232b5b;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-weight: 700;
             }
           }
         }

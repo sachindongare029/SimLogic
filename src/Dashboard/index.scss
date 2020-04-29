@@ -1,18 +1,40 @@
 .dashboard {
-  .dashboard-header {
+  .dashboard__select {
     display: flex;
-    color: white;
-    h4 {
-      font-weight: 700;
+    align-items: center;
+    label {
+      color: #8a9bd1;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .status__select__menu {
+      margin-left: 30px;
+      select {
+        background: linear-gradient(90deg, rgba(64, 188, 121, 1) 18%, rgba(99, 191, 54, 1) 56%);
+        color: white;
+        padding: 6px 14px;
+        min-width: 150px;
+        border: none;
+        border-radius: 22px;
+        font-size: 16px;
+        font-weight: 600;
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
+        outline: none;
+        option {
+          padding: 30px;
+          background: rgb(64, 188, 121);
+        }
+      }
     }
   }
   .dashboard__content {
     padding: 0 15px;
     margin: 20px 0;
     border: 1px solid transparent;
-    // padding: 35px 10px;
     border-radius: 10px;
-    background-color: #1E2B5B;
+    background-color: #1e2b5b;
     .dashboard__section {
       margin: 20px 0;
       color: #7a97ff;
@@ -25,7 +47,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-image: linear-gradient(to right, rgba(255,0,0,0), #0a6d7d);
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #0a6d7d);
         border-radius: 5px;
         height: 190px;
         padding: 20px 24px;

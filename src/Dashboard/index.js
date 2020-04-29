@@ -6,8 +6,19 @@ class Dashboard extends Component {
   render() {
     return (
       <div className="dashboard">
-        <div className="dashboard-header">
-          <h4>Dashboard</h4>
+        <div className="dashboard__select">
+          <label htmlFor="menu">Sim Status</label>
+          <div className="status__select__menu">
+            <select id="menu">
+              <option value="all">All</option>
+              <option value="activated">Activated</option>
+              <option value="activation_ready">Activation Ready</option>
+              <option value="deactivated">Deactivated</option>
+              <option value="inventary">Inventary</option>
+              <option value="test_ready">Test Ready</option>
+              <option value="retired">Retired</option>
+            </select>
+          </div>
         </div>
         <div className="dashboard__content">
           <div className="dashboard__overview">

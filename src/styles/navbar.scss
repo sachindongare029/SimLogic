@@ -87,12 +87,17 @@
         }
       }
     }
-    .navbar__user {
-      margin-left: 30px;
+    .navbar__icons {
+      margin-left: 42px;
+      .fa {
+        color: #62d056;
+        font-size: 24px;
+        margin-right: 20px;
+      }
       svg {
         width: 21px;
         height: 21px;
-        color: #48b13b;
+        color: #62d056;
       }
     }
   }

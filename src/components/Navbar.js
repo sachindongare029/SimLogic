@@ -25,7 +25,9 @@ class Navbar extends React.Component {
                 </div>
               </div>
             </form>
-            <div className="navbar__user">
+            <div className="navbar__icons">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <i class="fa fa-bell" aria-hidden="true"></i>
               <FontAwesomeIcon icon={faUser} />
             </div>
           </div>

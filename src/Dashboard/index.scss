@@ -40,7 +40,7 @@
       margin: 18px;
       padding: 15px;
       border-radius: 3px;
-      box-shadow: 5px 5px 9px -1px rgba(0,0,0,0.42);
+      box-shadow: 5px 5px 9px -1px rgba(0, 0, 0, 0.42);
       .data__stat__title {
         color: #232b5b;
         font-size: 22px;
@@ -101,21 +101,23 @@
   .dashboard__content {
     margin: 20px 0;
     .dashboard__section {
-      margin: 20px 0;
+      padding: 18px;
       color: #232b5b;
       font-size: 20px;
       font-weight: 600;
     }
     .dashboard__overview {
       margin-top: 20px;
+      background-color: #efefef;
+      border-radius: 3px;
       .data-card {
         // background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #0a6d7d);
         background-color: #fff;
         border-radius: 5px;
-        height: 450px;
-        padding: 32px 20px;
+        height: 460px;
+        padding: 32px 20px 10px;
         color: white;
-        margin: 0 18px;
+        margin: 0 18px 26px;
         .card__statistics {
           display: flex;
           justify-content: space-between;
@@ -195,13 +197,21 @@
       }
     }
     .dashboard__data {
+      margin-top: 20px;
+      background-color: #efefef;
+      border-radius: 3px;
       .dashboard__table__wrapper {
         margin-bottom: 40px;
+        padding: 0 18px 26px;
         table {
           background: #fef5ef;
           border-radius: 4px;
           tr {
             line-height: 45px;
+            td {
+              background: #ffffff;
+              color: #565656;
+            }
             td:first-child,
             th:first-child {
               padding-left: 20px;
@@ -213,16 +223,16 @@
           }
           thead {
             tr {
-              background: #1c3862;
-              color: #fff;
+              background: #ffffff;
+              color: #565656;
             }
           }
           tbody {
             tr {
-              border-bottom: 1px solid #757c98;
+              border-top: 1px solid rgba(0,0,0,.06);
             }
-            tr:last-child {
-              border-bottom: none;
+            tr:hover td {
+              background-color: #eff3f6;
             }
           }
         }

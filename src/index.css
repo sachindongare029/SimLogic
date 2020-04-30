@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'georgia';
+  src: local('georgia'), url(./assets/fonts/georgia.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'CrimsonText-Regular';
+  src: local('CrimsonText-Regular'), url(./assets/fonts/CrimsonText-Regular.ttf) format('truetype');
+}

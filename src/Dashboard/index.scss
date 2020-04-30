@@ -40,6 +40,7 @@
       margin: 18px;
       padding: 15px;
       border-radius: 3px;
+      box-shadow: 5px 5px 9px -1px rgba(0,0,0,0.42);
       .data__stat__title {
         color: #232b5b;
         font-size: 22px;
@@ -165,14 +166,18 @@
             }
             .chart__flow__stats {
               width: 65%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
               .chart__stat__title {
                 font-size: 12px;
                 color: #232b5b;
                 text-transform: uppercase;
                 font-weight: 700;
+                opacity: 0.6;
               }
               .progress {
-                height: 8px;
+                height: 4px;
                 background-color: #e9ecef;
                 border-radius: 20px;
               }

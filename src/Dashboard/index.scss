@@ -124,6 +124,8 @@
           align-items: center;
           .statistics__info {
             width: 65%;
+            display: flex;
+            align-items: center;
             .statistics__title {
               display: flex;
               align-items: center;
@@ -131,9 +133,26 @@
               font-weight: 700;
               color: #232b5b;
             }
-            .count__info {
-              text-align: start;
-              font-size: 12px;
+            .usage__plan__select {
+              margin-left: 20px;
+              select {
+                background: #4558be;
+                color: white;
+                padding: 8px 0 8px 10px;
+                min-width: 80px;
+                border: none;
+                border-radius: 6px;
+                font-size: 14px;
+                font-weight: 600;
+                -webkit-appearance: button;
+                -moz-appearance: button;
+                appearance: button;
+                outline: none;
+                option {
+                  padding: 30px;
+                  background: #4558be;
+                }
+              }
             }
           }
           .card__action--btn {
@@ -183,6 +202,9 @@
                 height: 4px;
                 background-color: #e9ecef;
                 border-radius: 20px;
+                .progress-bar {
+                  background-color: #4558be;
+                }
               }
             }
             .chart__flow__count {
@@ -194,6 +216,30 @@
               font-weight: 700;
             }
           }
+        }
+        .usage__line__chart {
+          width: 100%;
+          height: 75%;
+          margin-top: 20px;
+          .usage__chart__legend {
+            display: flex;
+            .legend__item {
+              display: flex;
+              align-items: center;
+              margin: 0 5px;
+              color: #232b5b;
+              .legend__indicator {
+                width: 40px;
+                height: 40px;
+              }
+            }
+          }
+        }
+      }
+      .second__section {
+        .col-4 {
+          margin-left: auto;
+          margin-right: auto;
         }
       }
     }
@@ -230,7 +276,7 @@
           }
           tbody {
             tr {
-              border-top: 1px solid rgba(0,0,0,.06);
+              border-top: 1px solid rgba(0, 0, 0, 0.06);
             }
             tr:hover td {
               background-color: #eff3f6;

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import InventaryPieChart from "./InventaryPieChart";
 import InventaryInfo from "./InventaryInfo";
+import UsageLineChart from './UsageLineChart';
 import "./index.scss";
 
 class Dashboard extends Component {
@@ -87,7 +88,7 @@ class Dashboard extends Component {
         <div className="dashboard__content">
           <div className="dashboard__overview">
             <div className="dashboard__section">Overview</div>
-            <div className="row">
+            <div className="row first__section">
               <div className="col-4">
                 <div className="data-card">
                   <div className="card__statistics">
@@ -104,11 +105,19 @@ class Dashboard extends Component {
                   <InventaryInfo />
                 </div>
               </div>
-              <div className="col-4">
+              <div className="col-8">
                 <div className="data-card">
                   <div className="card__statistics">
                     <div className="statistics__info">
                       <div className="statistics__title">Data Usage</div>
+                      <div className="usage__plan__select">
+                        <select id="usage">
+                          <option value="3gb">3GB</option>
+                          <option value="25gb">25GB</option>
+                          <option value="5gb">5GB</option>
+                          <option value="70gb">70GB</option>
+                        </select>
+                      </div>
                     </div>
                     <div className="card__action--btn">
                       <button type="button" className="btn btn-default">
@@ -116,8 +125,11 @@ class Dashboard extends Component {
                       </button>
                     </div>
                   </div>
+                  <UsageLineChart />
                 </div>
               </div>
+            </div>
+            <div className="row second__section">
               <div className="col-4">
                 <div className="data-card">
                   <div className="card__statistics">

@@ -130,7 +130,7 @@ class Dashboard extends Component {
               </div>
             </div>
             <div className="row second__section">
-              <div className="col-4">
+              <div className="col-8">
                 <div className="data-card">
                   <div className="card__statistics">
                     <div className="statistics__info">

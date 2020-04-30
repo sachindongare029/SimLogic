@@ -12,12 +12,12 @@
     .status__select__menu {
       margin-left: 30px;
       select {
-        background: linear-gradient(90deg, rgba(64, 188, 121, 1) 18%, rgba(99, 191, 54, 1) 56%);
+        background: #4558be;
         color: white;
-        padding: 8px 0 8px 23px;
+        padding: 8px 0 8px 10px;
         min-width: 150px;
         border: none;
-        border-radius: 22px;
+        border-radius: 6px;
         font-size: 14px;
         font-weight: 600;
         -webkit-appearance: button;
@@ -26,7 +26,7 @@
         outline: none;
         option {
           padding: 30px;
-          background: rgb(64, 188, 121);
+          background: #4558be;
         }
       }
     }
@@ -139,8 +139,9 @@
           .card__action--btn {
             width: 35%;
             .btn-default {
-              background: linear-gradient(0deg, rgba(64, 188, 121, 1) 28%, rgba(99, 191, 54, 1) 77%);
+              background: #4558be;
               border-radius: 25px;
+              color: #fff;
               float: right;
               padding: 0.21rem 0.5rem;
             }

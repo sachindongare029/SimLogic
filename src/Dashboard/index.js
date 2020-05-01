@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import InventaryPieChart from "./InventaryPieChart";
 import InventaryInfo from "./InventaryInfo";
 import UsageLineChart from './UsageLineChart';
+import CostBarChart from './CostBarChart';
 import "./index.scss";
 
 class Dashboard extends Component {
@@ -130,7 +131,7 @@ class Dashboard extends Component {
               </div>
             </div>
             <div className="row second__section">
-              <div className="col-8">
+              <div className="col-5">
                 <div className="data-card">
                   <div className="card__statistics">
                     <div className="statistics__info">
@@ -142,6 +143,7 @@ class Dashboard extends Component {
                       </button>
                     </div>
                   </div>
+                  <CostBarChart />
                 </div>
               </div>
             </div>

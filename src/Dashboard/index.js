@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import InventaryPieChart from "./InventaryPieChart";
 import InventaryInfo from "./InventaryInfo";
 import UsageLineChart from './UsageLineChart';
@@ -25,7 +25,7 @@ class Dashboard extends Component {
         </div>
         <div className="data__statistics">
           <div className="data__statistics__section inventary__section">
-            <div className="data__stat__title">Inventary</div>
+            <div className="data__stat__title">Inventory</div>
             <div className="data__stat__content">
               <div className="data__stat__count">
                 220 <span className="count__unit">PCS</span>
@@ -89,7 +89,7 @@ class Dashboard extends Component {
           <div className="dashboard__overview">
             <div className="dashboard__section">Overview</div>
             <div className="row first__section">
-              <div className="col-4">
+              <div className="col-5">
                 <div className="data-card">
                   <div className="card__statistics">
                     <div className="statistics__info">
@@ -105,7 +105,7 @@ class Dashboard extends Component {
                   <InventaryInfo />
                 </div>
               </div>
-              <div className="col-8">
+              <div className="col-7">
                 <div className="data-card">
                   <div className="card__statistics">
                     <div className="statistics__info">

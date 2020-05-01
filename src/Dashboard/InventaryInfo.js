@@ -6,7 +6,7 @@ class InventaryInfo extends Component {
       <div className="inventary__chart__info">
         <div className="chart__info__section">
           <div className="chart__color__logo">
-            <svg height="100%" width="100%">
+            <svg height="100%" width="70%">
               <circle cx="20" cy="20" r="12" strokeWidth="3" fill="#BE61CA" />
             </svg>
           </div>
@@ -27,7 +27,7 @@ class InventaryInfo extends Component {
         </div>
         <div className="chart__info__section">
           <div className="chart__color__logo">
-            <svg height="100%" width="100%">
+            <svg height="100%" width="70%">
               <circle cx="20" cy="20" r="12" strokeWidth="3" fill="#633EBB" />
             </svg>
           </div>
@@ -48,7 +48,7 @@ class InventaryInfo extends Component {
         </div>
         <div className="chart__info__section">
           <div className="chart__color__logo">
-            <svg height="100%" width="100%">
+            <svg height="100%" width="70%">
               <circle cx="20" cy="20" r="12" strokeWidth="3" fill="#F2BC5E" />
             </svg>
           </div>
@@ -69,7 +69,7 @@ class InventaryInfo extends Component {
         </div>
         <div className="chart__info__section">
           <div className="chart__color__logo">
-            <svg height="100%" width="100%">
+            <svg height="100%" width="70%">
               <circle cx="20" cy="20" r="12" strokeWidth="3" fill="#F13C59" />
             </svg>
           </div>
@@ -90,7 +90,7 @@ class InventaryInfo extends Component {
         </div>
         <div className="chart__info__section">
           <div className="chart__color__logo">
-            <svg height="100%" width="100%">
+            <svg height="100%" width="70%">
               <circle cx="20" cy="20" r="12" strokeWidth="3" fill="#64C2A6" />
             </svg>
           </div>

@@ -62,7 +62,7 @@ class UsageLineChart extends Component {
   }
   componentDidMount() {
     const instance = this.refs.chart.chartInstance;
-    console.log(instance);
+    // console.log(instance);
     this.setState({ legend: instance.legend.legendItems });
   }
 
